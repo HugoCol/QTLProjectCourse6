@@ -77,5 +77,7 @@ def main():
 
     pValues = tTest(sortedDict)
 
+    print("yes")
+
 
 main()
