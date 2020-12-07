@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:SciPyRoughScript" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e04ba20c-a5ff-4273-97fa-0cfae1cfcd2a" name="Default Changelist" comment="finished first version of QTLAnalysis.py using stats packages of scipy" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="SciPyRoughScript" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JupyterTrust" id="ee49ecbc-c40f-445f-bf45-54d6853e7f80" />
+  <component name="ProjectId" id="1l9h02OOxdENCI2PS0E7XQxVWJ7" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="ignore_missing_gitignore" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/QTLAnalysis.py" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.project" />
+  </component>
+  <component name="RunManager">
+    <configuration name="QTLAnalysis" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="QTLProjectCourse6" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\yuriw\PycharmProjects\QTLProjectCourse6\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/QTLAnalysis.py" />
+      <option name="PARAMETERS" value="CvixLerC9.loc.txt CvixLerC9.qua.txt" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="QTLProjectCourse6" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\yuriw\PycharmProjects\QTLProjectCourse6\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/QTLAnalysis.py" />
+      <option name="PARAMETERS" value="CvixLerC9.loc.txt CvixLerC9.qua.txt" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e04ba20c-a5ff-4273-97fa-0cfae1cfcd2a" name="Default Changelist" comment="" />
+      <created>1607014988067</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1607014988067</updated>
+      <workItem from="1607014989149" duration="7115000" />
+      <workItem from="1607024718956" duration="1356000" />
+      <workItem from="1607026100230" duration="2944000" />
+      <workItem from="1607345976507" duration="304000" />
+    </task>
+    <task id="LOCAL-00001" summary="finished first version of QTLAnalysis.py using stats packages of scipy">
+      <created>1607028018681</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607028018681</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="SciPyRoughScript" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="finished first version of QTLAnalysis.py using stats packages of scipy" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished first version of QTLAnalysis.py using stats packages of scipy" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607026192195">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.-402.1080.1880/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607026192195" />
+    <state x="740" y="225" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1607016988864">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="225" key="#com.intellij.ide.macro.MacrosDialog/0.0.1920.1040/1920.-402.1080.1880/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607016988864" />
+    <state x="507" y="88" key="CommitChangelistDialog2" timestamp="1607027870423">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="507" y="88" key="CommitChangelistDialog2/0.0.1920.1040/1920.-402.1080.1880/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607027870423" />
+    <state x="349" y="352" key="FileChooserDialogImpl" timestamp="1607024180013">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="349" y="352" key="FileChooserDialogImpl/0.0.1920.1040/1920.-402.1080.1880/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607024180013" />
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1607029072887">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-402.1080.1880/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607029072887" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1607029072886">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-402.1080.1880/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607029072886" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1607029072886">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-402.1080.1880/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607029072886" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1607029072887">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-402.1080.1880/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607029072887" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1607029072887">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.-402.1080.1880/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607029072887" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1607029072887">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/1920.-402.1080.1880/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607029072887" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1607029072887">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/1920.-402.1080.1880/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607029072887" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1607029072887">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.-402.1080.1880/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607029072887" />
+    <state x="184" y="165" key="SettingsEditor" timestamp="1607028236488">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="165" key="SettingsEditor/0.0.1920.1040/1920.-402.1080.1880/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607028236488" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1607028023414">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.-402.1080.1880/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607028023414" />
+    <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1607026981749">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="968" height="528" key="XDebugger.FullValuePopup/0.0.1920.1040/1920.-402.1080.1880/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607026981749" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607016456745">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.-402.1080.1880/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607016456745" />
+    <state x="623" y="225" key="search.everywhere.popup" timestamp="1607015606573">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" key="search.everywhere.popup/0.0.1920.1040/1920.-402.1080.1880/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607015606573" />
+    <state x="682" y="432" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1607015924471">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="682" y="432" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1920.1040/1920.-402.1080.1880/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607015924471" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/QTLProjectCourse6$QTLAnalysis.coverage" NAME="QTLAnalysis Coverage Results" MODIFIED="1607027671007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
