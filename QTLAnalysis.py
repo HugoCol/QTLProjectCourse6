@@ -6,7 +6,7 @@ import numpy as np
 
 def fileReader(markerFile, concValueFile):
     markerdict = {}
-    valueDict = {}
+    concValueList = []
     headerline = []
     values = []
 
@@ -14,7 +14,7 @@ def fileReader(markerFile, concValueFile):
         for _ in range(7):
             next(file)
         for line in file:
-            if line[0].isupper() or line == 'individual names:\n':
+            if line[0].isalpha() or line == 'individual names:\n':
                 if headerline and values:
                     markerdict[tuple(headerline)] = values
                     values = []
@@ -30,9 +30,10 @@ def fileReader(markerFile, concValueFile):
             next(file)
         for line in file:
             temp = line.replace("\n", "").split("\t")
-            valueDict[int(temp[0])] = temp[1]
+            if temp[1] != '-':
+                concValueList.append(temp[1])
 
-    return markerdict, valueDict
+    return markerdict, concValueList
 
 
 def dataSorter(markerDict, valueDict):
@@ -42,19 +43,24 @@ def dataSorter(markerDict, valueDict):
         aValues = []
         bValues = []
         nestedDict = {}
-        for indexValue in range(len(markerDict[header])):
+        # for indexValue in range(len(markerDict[header])):
+        #     if markerDict[header][indexValue] == 'a':
+        #         try:
+        #             if valueDict[indexValue+1] != '-':
+        #                 aValues.append(valueDict[indexValue + 1])
+        #         except KeyError:
+        #             continue
+        #     elif markerDict[header][indexValue] == 'b':
+        #         try:
+        #             if valueDict[indexValue] != '-':
+        #                 bValues.append(valueDict[indexValue + 1])
+        #         except KeyError:
+        #             continue
+        for indexValue in range(len(markerDict[header]) - 1):
             if markerDict[header][indexValue] == 'a':
-                try:
-                    if valueDict[indexValue+1] != '-':
-                        aValues.append(valueDict[indexValue + 1])
-                except KeyError:
-                    continue
+                aValues.append(valueDict[indexValue])
             elif markerDict[header][indexValue] == 'b':
-                try:
-                    if valueDict[indexValue+1] != '-':
-                        bValues.append(valueDict[indexValue + 1])
-                except KeyError:
-                    continue
+                bValues.append(valueDict[indexValue])
         nestedDict['a'] = aValues
         nestedDict['b'] = bValues
         sortedDict[header] = nestedDict
@@ -70,7 +76,7 @@ def tTest(sortedDict):
         aValues = np.array(sortedDict[key]['a']).astype(np.float)
         bValues = np.array(sortedDict[key]['b']).astype(np.float)
         tStat, pValue = stats.ttest_ind(aValues, bValues)
-        #print("P-Value:{0} T-Statistic:{1}".format(pValue, tStat))
+        # print("P-Value:{0} T-Statistic:{1}".format(pValue, tStat))
         pValues[key] = {"pValue": pValue, "tStat": tStat}
 
     return pValues
@@ -80,11 +86,12 @@ def main():
     markerFile = sys.argv[1]
     concValueFile = sys.argv[2]
 
-    markerDict, valueDict = fileReader(markerFile, concValueFile)
-    sortedDict = dataSorter(markerDict, valueDict)
+    markerDict, concValueList = fileReader(markerFile, concValueFile)
+    sortedDict = dataSorter(markerDict, concValueList)
 
     pValues = tTest(sortedDict)
-    print(pValues)
+    for i in pValues:
+        print(pValues[i]['pValue'])
 
 
 main()
