@@ -68,6 +68,42 @@ def tTest(sortedDict):
     return pValues
 
 
+def pValueFilter(pValues):
+    filteredPValues = {}
+
+    for key in pValues:
+        if pValues[key]['pValue'] < 0.05:
+            filteredPValues[key] = pValues[key]
+
+    return filteredPValues
+
+
+def fileWriter(pValues, filteredPValues):
+    with open('results.csv', 'w') as file:
+        file.write("Filtered results,\n")
+        header_line = "Marker,pValue,tStat\n"
+        file.write(header_line)
+        for key in filteredPValues:
+            markerName = key[0]
+            pValue = str(filteredPValues[key]['pValue'])
+            tStat = str(filteredPValues[key]['tStat'])
+            line = markerName + ',' + pValue + ',' + tStat + '\n'
+            file.write(line)
+
+        file.write("\n\n\n")
+        file.write("Unfiltered results\n")
+        header_line = "Marker,pValue,tStat\n"
+        file.write(header_line)
+        for key in pValues:
+            markerName = key[0]
+            pValue = str(pValues[key]['pValue'])
+            tStat = str(pValues[key]['tStat'])
+            line = markerName + ',' + pValue + ',' + tStat + '\n'
+            file.write(line)
+
+    file.close()
+
+
 def main():
     markerFile = sys.argv[1]
     concValueFile = sys.argv[2]
@@ -77,7 +113,13 @@ def main():
 
     pValues = tTest(sortedDict)
 
-    print("yes")
+    filteredPValues = pValueFilter(pValues)
+
+    fileWriter(pValues, filteredPValues)
+
+    for key in pValues:
+        print(key)
+        print(pValues[key])
 
 
 main()
