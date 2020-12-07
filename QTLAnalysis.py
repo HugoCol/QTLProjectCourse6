@@ -30,8 +30,7 @@ def fileReader(markerFile, concValueFile):
             next(file)
         for line in file:
             temp = line.replace("\n", "").split("\t")
-            if temp[1] != '-':
-                concValueList.append(temp[1])
+            concValueList.append(temp[1])
 
     return markerdict, concValueList
 
@@ -45,9 +44,11 @@ def dataSorter(markerDict, valueDict):
         nestedDict = {}
         for indexValue in range(len(markerDict[header]) - 1):
             if markerDict[header][indexValue] == 'a':
-                aValues.append(valueDict[indexValue])
+                if valueDict[indexValue] != '-':
+                    aValues.append(valueDict[indexValue])
             elif markerDict[header][indexValue] == 'b':
-                bValues.append(valueDict[indexValue])
+                if valueDict[indexValue] != '-':
+                    bValues.append(valueDict[indexValue])
         nestedDict['a'] = aValues
         nestedDict['b'] = bValues
         sortedDict[header] = nestedDict
